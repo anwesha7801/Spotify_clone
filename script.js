@@ -36,7 +36,7 @@ let songs = [
     { songName: "Let Me Down Slowly", filePath: "songs/6.mp3", coverPath: "images/let-me-down-slowly.jpg" },
     { songName: "Girls Like You", filePath: "songs/7.mp3", coverPath: "images/girls-like-you.jpg" },
     { songName: "Rockabye", filePath: "songs/8.mp3", coverPath: "images/rockabye.jpg" },
-    { songName: "Pasoori", filePath: "songs/9.mp3", coverPath: "images/Pasoori.jpg" },
+    { songName: "Pasoori", filePath: "songs/9.mp3", coverPath: "images/pasoori.jpg" },
     { songName: "Kehndi Hundi Si", filePath: "songs/10.mp3", coverPath: "images/kehndi-hundi-si.jpg" },
     { songName: "High Rated Gabru", filePath: "songs/11.mp3", coverPath: "images/high-rated-gabru.jpg" },
     { songName: "Backbone", filePath: "songs/12.mp3", coverPath: "images/backbone.jpg" },
