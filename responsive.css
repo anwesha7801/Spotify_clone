@@ -1,0 +1,102 @@
+@media screen and (max-width: 1136px) {
+    .leftSide nav ul li {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1069px) {
+    .bottom {
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .logo img {
+        display: none;
+    }
+    .logo2 img {
+        display: block;
+    }
+    .vanish {
+        display: none;
+    }
+    .leftSide {
+        width: 65px;
+    }
+    .rightSide {
+        width: 93%;
+    }
+    #myProgressBar {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+    .vanishBox {
+        display: block;
+    }
+    .songInfo {
+        display: none;
+    }
+    .volumeBar {
+        display: none;
+    }
+    .icons {
+        margin-bottom: 6px;
+    }
+    #myProgressBar {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .rightSide .icon {
+        display: none;
+    }
+    .rightSide h1 {
+        font-size: 1.7rem;
+        margin: 1rem;
+    }
+    .rightSide nav ul {
+        float: right;
+    }
+    .songs {
+        margin: 1rem;
+    }
+    .box {
+        width: 100px;
+        height: 200px;
+        margin: 5px;
+        padding: 10px;
+    }
+    .box img {
+        height: 150px;
+    }
+    .imgbox {
+        height: 150px;
+    }
+    .box .songName {
+        font-size: 0.8rem;
+        margin: 3px 0 3px 0;
+    }
+    .box .artistName {
+        font-size: 0.6rem;
+    }
+    .content {
+        height: 150px;
+        transform: translateY(50px);
+    }
+    .content i {
+        font-size: 2rem;
+        border-radius: 1rem;
+    }
+    .leftSide nav {
+        padding: 10px;
+    }
+    .leftSide {
+        width: 45px;
+    }
+}

@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: 'Signika', sans-serif;
+}
+
+.main {
+    display: flex;
+}
+
+.leftSide {
+    background-color: black;
+    width: 17%;
+}
+
+
+/* Vertical Navigation Menu */
+
+.leftSide nav {
+    position: sticky;
+    top: 0;
+    height: 90vh;
+    padding: 20px;
+}
+
+.leftSide nav ul {
+    list-style-type: none;
+    color: rgb(209, 209, 209);
+}
+
+.leftSide nav ul li:hover {
+    color: white;
+    text-shadow: 0 0 2px white;
+    cursor: pointer;
+}
+
+.leftSide nav ul li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.leftSide nav ul li span {
+    margin-right: 15px;
+}
+
+.vanish {
+    display: block;
+}
+
+.line {
+    content: " ";
+    display: block;
+    border-bottom: 0.5px solid rgb(71, 71, 71);
+}
+
+.bellow {
+    position: fixed;
+    bottom: 5rem;
+}
+
+.bellow li {
+    font-size: 0.8rem !important;
+}
+
+.bellow li:hover {
+    color: rgb(209, 209, 209);
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0) !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.logo2 img {
+    width: 25px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.rightSide {
+    background-image: linear-gradient(rgb(17, 17, 25), rgb(30, 30, 30));
+    width: 83%;
+}
+
+
+/* Horizontal Nav */
+
+.rightSide nav {
+    position: sticky;
+    top: 0;
+    background-color: rgb(17, 17, 25);
+    height: 50px;
+    z-index: 2;
+}
+
+.rightSide nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rightSide .icon {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.rightSide .icon i {
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.8) !important;
+    font-size: 2rem;
+}
+
+.rightSide .icon i:hover {
+    cursor: not-allowed;
+}
+
+.rightSide .button {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.btn1 {
+    color: rgb(183, 183, 183);
+    margin-right: 20px;
+}
+
+.btn1:hover {
+    color: white;
+    text-shadow: 0 0 2px white;
+    transition: all 0.2s;
+}
+
+.btn2 {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding: 9px 20px 9px 20px;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    transform: scale(1.02);
+    background-color: rgb(241, 241, 241);
+    transition: all 0.2s;
+}
+
+
+/* Main Songs-container */
+
+h1 {
+    margin: 1.8rem;
+}
+
+.songs {
+    grid-gap: 1.8rem;
+    margin: 1.8rem;
+}
+
+.box {
+    height: 270px;
+    width: 185px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.box img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.box .songName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.box .artistName {
+    font-size: 0.8rem;
+    color: rgb(148, 148, 148);
+}
+
+
+/* play animation */
+
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    transform: translateY(100px);
+    transition: all 0.2s;
+}
+
+.content i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    background-color: black;
+    border-radius: 2rem;
+    font-size: 3.5rem;
+    color: rgb(0, 225, 0);
+}
+
+.imgbox:hover .content {
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.imgbox i:hover {
+    transform: scale(1.03);
+}
+
+.space {
+    height: 160px;
+    padding: 20px;
+}
+
+
+/* Music-player */
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 11vh;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    position: fixed;
+    bottom: 0;
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.songInfo img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 5px 1px rgb(0, 0, 0);
+    margin: 0 10px 0 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.info i {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.icons {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i {
+    margin: 0 8px 0 8px;
+    cursor: pointer;
+    color: gray;
+}
+
+.icons span {
+    margin: 0 8px 0 8px;
+    cursor: pointer;
+    color: gray;
+}
+
+#masterPlay {
+    color: white !important;
+}
+
+#masterPlay:hover {
+    transform: scale(1.1);
+}
+
+.icons i:hover {
+    color: white;
+}
+
+.icons span:hover {
+    color: white;
+}
+
+.progressBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#myProgressBar {
+    width: 50%;
+    text-align: center;
+    height: 4px !important;
+}
+
+.vanishBox {
+    padding: 2px 0 0 0;
+    font-size: 0.8rem;
+    color: rgb(159, 159, 255);
+    display: none;
+    float: left;
+}
+
+
+/* input range */
+
+input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: rgb(100, 100, 100);
+    height: 4px;
+    border-radius: 2px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    color: white;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 4px;
+    background: white;
+    box-shadow: -800px 0 0 800px white;
+}
+
+
+/* volume bar */
+
+.volumeBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volumeBar span {
+    color: rgb(218, 218, 218);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.volumeBar span:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.volume-slider-con {
+    height: 4px;
+    width: 50%;
+    border-radius: 2px;
+    position: relative;
+    background-color: rgb(100, 100, 100);
+}
+
+.volume-slider {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    position: relative;
+    background-color: white;
+}
+
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #bebebe;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(111, 111, 111);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(54, 54, 54);
+}
